@@ -144,3 +144,45 @@ array_2.forEach((ele) =>
 )
 
 str_2.innerHTML += ("array to string : " + array_2.toString());
+//Question.3
+let array3 = [8 , 4 , 5 , 9, 3 , 6];
+no(array);
+function no(arr) {
+    if (arr.length === 0) {
+    }
+let max = arr[0];
+let min = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+    }
+document.getElementById('arr-3').innerHTML = " " + max;
+document.getElementById('str-3').innerHTML = " " + min;
+}
+//Question-4
+let sentence = 'This is cat';
+let index = 3;
+console.log(
+  `Character code ${sentence.charCodeAt(index)} is equal to ${sentence.charAt(
+    index,
+  )}`,
+);
+
+//Question-5
+let array4 = [-23, -20, -17, -12, -5, 0, 1, 5, 12, 19, 20];
+function nag(arr) {
+    return arr.filter(function(no) {
+        return no >= 0;
+});}
+let pos = nag(array);
+console.log("pos numbers=",pos);
+
+//Question-8
+const array5 = ['Python', 'Javascript', 'Go', 'Java', 'PHP', 'Ruby'];
+const filterword = array5.filter(array5 => array5.length >= 8);
+console.log("Filtered word:", filterword);
